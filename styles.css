@@ -1,0 +1,800 @@
+body{
+    padding:0;
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+.hide{
+    display: none;
+}
+
+.nav-menu{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 100vh;
+}
+
+.nav-menu-hide{
+    display: none;
+}
+
+.navmenu-links{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 250;
+    font-size: 1.6rem;
+    margin-top: 5em;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navmenu-links > li{
+    margin-left: 5%;
+    padding-bottom: 1em;
+}
+
+.navmenu-logo-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navmenu-logo{
+    margin-top: 2em;
+    margin-left: 5%;
+    width: 9em;
+}
+
+.close-btn{
+    margin-right:5%;
+    margin-top: 2em;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.seeall-desktop:hover{
+    color: white;
+    background-color: black;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.logoDiv {
+    margin: 2em 0em 0em 8%;
+    width: fit-content;
+}
+
+.menuDiv{
+    display: none;
+}
+
+.footer{
+    background-color: black;
+}
+
+.headlineDiv{
+    color:white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    border: 1px solid white;
+    margin-left: 8%;
+    margin-top: 4em;
+    padding: 1em 1em;
+    width: 10em;
+    font-size: 3.3rem;
+}
+
+.navbar-links{
+    display: flex;
+    color: white;
+    font-size: 1.3rem;
+    margin-right: 7%;
+    margin-top: 1.5em;
+}
+
+.navbar-links > li{ 
+    color: white;
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    display: block;
+    padding-left: 1.2em; 
+    position: relative;
+    padding-bottom: 3px;
+}
+
+.navbar-links > li::before{
+    content: '';
+    bottom:-4px;
+    left: 42px;
+    width: 30%;
+    display: block;
+    position: absolute; 
+}
+
+.navbar-links > li:hover::before{
+    border-bottom: 2px solid white;
+}
+
+.footer-links >li{
+    color: white;
+    font-family: 'Alata', sans-serif;
+    cursor: pointer;
+    display: block;
+    position: relative;
+}
+
+.footer-links > li::before{
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left:9.5px;
+    width: 50%;
+    display: block;
+}
+
+.footer-links > li:hover::before{
+    border-bottom: 2px solid white;
+}
+
+.VR-heading{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    margin-left: 0;
+    max-width: 10em;
+    text-align: left;
+    font-size: 3rem;
+}
+
+.VR-para{
+    font-family: 'Alata', sans-serif;
+    color: hsl(0, 0%, 55%);
+    font-weight: 400;
+    max-width: 25em;
+    text-align: justify;
+}
+
+.VR-image{
+    width: 55em;
+}
+
+.VR-section{
+    margin-top: 10em;
+    margin-left: 8%;
+    height: fit-content;
+    max-height: 45em;
+}
+
+.VR-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: -19em;
+    left: 30em;
+    background-color: white;
+    width: fit-content;
+    padding: 3em 0 1em 3em;
+}
+
+.creations-heading{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+header{
+    background-image: url('./images/desktop/image-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 70em;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.creations-section{
+    margin-top: 10em;
+    margin-left: 8%;
+    margin-right: 7%;
+}
+
+.creations-heading{
+    margin-left: 0;
+    max-width: 10em;
+    text-align: left;
+}
+
+.creations-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seeall-desktop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5em;
+    width: 6em;
+    border: 2px solid black;
+    padding: 0em 2.5em;
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.seeall-btn{
+    display: none;
+}
+
+.image-list{
+    margin-top: 5em;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2em;
+    justify-content: center;
+    align-content: center;
+}
+
+.list-item{
+    position: relative;
+    list-style: none;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 20rem;
+    width: 100%;
+    height: 35rem;
+    margin: auto;
+    z-index: 1;
+}
+
+.list-item:hover{
+    color: black;
+}
+
+.list-item::after{
+    content: '';
+    position: absolute;
+    top:0; left: 0;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 25%;
+    z-index: -1;
+}
+
+.list-item:hover::after{
+    content: '';
+    position: absolute;
+    top:0; left: 0;
+    background-color: rgb(184, 179, 179);;
+    width: 100%;
+    height: 100%;
+    opacity: 70%;
+    z-index: -1;
+}
+
+.image-list > li > p{
+    position: absolute;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    left:0.5em;
+    top: 12.5em;
+    font-size: 2.3rem;
+    max-width: 5.5em;
+}
+
+.list-item-1{
+    background-image: url('./images/desktop/image-deep-earth.jpg');
+}
+.list-item-2{
+    background-image: url('./images/desktop/image-night-arcade.jpg');
+}
+.list-item-3{
+    background-image: url('./images/desktop/image-soccer-team.jpg');
+}
+.list-item-4{
+    background-image: url('./images/desktop/image-grid.jpg');
+}
+.list-item-5{
+    background-image: url('./images/desktop/image-from-above.jpg');
+ 
+}
+.list-item-6{
+    background-image: url('./images/desktop/image-pocket-borealis.jpg');
+}
+.list-item-7{
+    background-image: url('./images/desktop/image-curiosity.jpg');
+}
+.list-item-8{
+    background-image: url('./images/desktop/image-fisheye.jpg');
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10em;
+    flex-direction: row;
+    padding-bottom: 4em;
+}
+
+.logo-footer{
+    margin-top: 5em;
+}
+
+.footer-links{
+    display: flex;
+    margin-top: 2em;
+}
+
+.footer-links > li{
+    list-style: none;
+    color: white;
+    font-family: 'Alata', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 0em 0em 0.5em 0em;
+    margin-right: 1.6em;
+}
+
+.copyright-div > p{
+    text-align: right;
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+    color: hsl(0, 0%, 41%);
+    font-size: 1rem;
+    margin-top: 2.2em;
+}
+
+.copyright-div{
+    margin-top: 0.5em;
+}
+
+.logo-and-links{
+    margin-left: 8%;
+}
+
+.footer-icons{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icons-and-copyright{
+    margin-right: 7%;
+    margin-top: 5em;
+    line-height: 2;
+}
+
+.icon{
+    cursor: pointer;
+    position: relative;
+    margin-left: 1em;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid black;
+}
+
+.icon:hover{
+    border-bottom: 2px solid white;
+}
+
+@media (max-width:1100px) {
+
+    .seeall-desktop{
+        display: none;
+    }
+
+    .menuDiv{
+        display: block;
+        margin: 2em 5% 0em 0em;
+        width: fit-content;
+    }
+
+    .navbar-links{
+        display: none;
+    }
+
+    .headlineDiv{
+        font-size: 3.2rem;
+        width: 7em;
+        padding: 0.4em;
+        padding-right: 2em;
+        margin-left: 5%;
+        margin-top: 4em;
+    }
+
+    .VR-section, .creations-section{
+        position: static;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .creations-section{
+        margin-top:0;
+    }
+
+    .seeall-btn:hover{
+        color: white;
+        background-color: black;
+    }
+
+    .VR-image{
+        margin-top: 5em;
+        width: 30em;
+    }
+
+    .VR-content{
+        position: static;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .VR-heading{
+        font-size: 3rem;
+        max-width: 10em;
+        text-align: center;
+        margin: 1em 0 0 0;
+    }
+
+    .VR-para{
+        font-size: 1.1rem;
+        max-width: 25em;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+        text-align: center;
+    }
+
+    .creations-heading{
+        margin-top: 2em;
+        text-align: center;
+        font-size: 3rem;
+        max-width: 10em;
+        text-align: center;
+    }
+
+    .image-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 0;
+    }
+
+    .image-list > li > p{
+        font-size: 2rem;
+        max-width: 5.5em;
+        left: 0.5em;
+        top: 2.3em;
+    }
+
+    .list-item{
+        margin-top: 2em;
+        width: 40em;
+        height: 10em;
+    }
+
+    .list-item-1{
+        background-image: url('./images/mobile/image-deep-earth.jpg');
+        background-size: cover;
+    }
+    .list-item-2{
+        background-image: url('./images/mobile/image-night-arcade.jpg');
+        background-size: cover;
+    }
+    .list-item-3{
+        background-image: url('./images/mobile/image-soccer-team.jpg');
+        background-size: cover;
+    }
+    .list-item-4{
+        background-image: url('./images/mobile/image-grid.jpg');
+        background-size: cover;
+    }
+    .list-item-5{
+        background-image: url('./images/mobile/image-from-above.jpg');
+        background-size: cover;
+    }
+    .list-item-6{
+        background-image: url('./images/mobile/image-pocket-borealis.jpg');
+        background-size: cover;
+    }
+    .list-item-7{
+        background-image: url('./images/mobile/image-curiosity.jpg');
+        background-size: cover;
+    }
+    .list-item-8{
+        background-image: url('./images/mobile/image-fisheye.jpg');
+        background-size: cover;
+    }
+
+    .seeall-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2.5em;
+        width: 6em;
+        border: 2px solid black;
+        padding: 0em 2.5em;
+        font-family: 'Alata', sans-serif;
+        font-weight: 400;
+        font-size: 1.2rem;
+        margin-top: 2em;
+    }
+
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10em;
+        flex-direction: column;
+        padding-bottom: 4em;
+    }
+
+    .icons-and-copyright{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-footer{
+        margin-top: 5em;
+    }
+
+    .footer-links{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2em;
+    }
+
+    .logo-and-links{
+        margin: 0;
+    }
+
+    .footer-links > li{
+        list-style: none;
+        text-align: center;
+        font-weight: 400;
+        font-size: 1.2rem;
+        padding: 0.5em;
+        margin: 0;
+    }
+
+    .footer-links > li::before{
+        content: '';
+    }
+
+    .footer-links > li:hover::before{
+        border-bottom: unset;
+    }
+
+    .icons-and-copyright{
+        margin: 0;
+    }
+
+    .footer-icons{
+        margin-top: 2.5em;
+        width: 13em;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .copyright-div > p{
+        font-family: 'Alata', sans-serif;
+        font-weight: 400;
+        color: hsl(0, 0%, 41%);
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 820px) {
+    .list-item{
+        margin-top: 2em;
+        width: 35em;
+        height: 10em;
+    }
+}
+
+@media (max-width: 720px) {
+    header{
+        background-image: url('./images/mobile/image-hero.jpg');
+        height: 50em;
+    }
+
+    .headlineDiv{
+        font-size: 3rem;
+        width: 6em;
+        padding: 0.4em;
+        padding-right: 2em;
+        margin-left: 5%;
+        margin-top: 4em;
+    }
+
+    .VR-heading{
+        width: 18em;
+    }
+
+    .VR-para{
+        max-width: 20em;
+    }
+
+    .list-item{
+        margin-top: 2em;
+        width: 30em;
+        height: 10em;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .VR-image{
+        margin-top: 5em;
+        width: 25em;
+    }
+
+    .VR-heading{
+        font-size: 2.2rem;
+        width: 13em;
+    }
+
+    .VR-para{
+        font-size: 1rem;
+    }
+
+    header{
+        background-attachment: unset;
+    }
+
+    .headlineDiv{
+        font-size: 2.5rem;
+        width: 6em;
+        padding: 0.4em;
+        padding-right: 2em;
+        margin-left: 5%;
+        margin-top: 4em;
+    }
+
+    .creations-heading{
+        font-size: 2.2rem;
+        width: 13em;
+    }
+
+    .list-item{
+        margin-top: 2em;
+        width: 25em;
+        height: 10em; 
+    }
+
+}
+
+@media (max-width:440px) {
+    .VR-image{
+        margin-top: 5em;
+        width: 20em;
+    }
+
+    .list-item{
+        margin-top: 2em;
+        width: 20em;
+        height: 10em;
+    }
+
+    .VR-heading{
+        font-size: 2rem;
+        max-width: 10em;
+        text-align: center;
+    }
+
+    .creations-heading{
+        font-size: 2rem;
+        max-width: 10em;
+        margin-top: 2em;
+    }
+}
+
+@media (max-width: 365px) {
+    .headlineDiv{
+        width: 6em;
+        padding: 0.4em;
+        padding-right: 1.7em;
+        font-size: 2.1rem;
+        margin-left: 5%;
+        margin-top: 4em;
+    }
+
+    .image-list > li > p{
+        font-size: 1.7rem;
+        max-width: 5.2em;
+        left: 0.5em;
+        top: 3em;
+    }
+
+    .VR-heading{
+        width: 18em;
+    }
+}
+
+@media (max-width: 340px) {
+    
+    .headlineDiv{
+        width: 6em;
+        padding: 0.4em;
+        padding-right: 1.5em;
+        font-size: 1.7rem;
+        margin-left: 5%;
+        margin-top: 4em;
+    }
+
+    .VR-image{
+        margin-top: 5em;
+        width: 15em;
+    }
+
+    .VR-heading{
+        font-size: 1.7rem;
+        max-width: 10em;
+        text-align: center;
+    }
+
+    .VR-para{
+        max-width: 15em;
+    }
+
+    .creations-heading{
+        font-size: 1.7rem;
+        max-width: 10em;  
+    }
+
+    .logo{
+        width: 10em;
+    }
+
+    .menu{
+        width: 1.4em;
+    }
+    
+    .list-item{
+        margin-top: 2em;
+        width: 17em;
+        height: 10em;
+    }
+
+    .image-list > li > p{
+        font-size: 1.6rem;
+        max-width: 5.2em;
+        left: 0.5em;
+    }
+
+    header{
+        height: 35em;
+    }
+}
+

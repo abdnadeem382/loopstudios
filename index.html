@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel='stylesheet' href='/styles.css' >
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300&display=swap" rel="stylesheet">
+    
+    <title>Frontend Mentor | Loopstudios landing page</title>
+
+  </head>
+  <body>
+    <div id='#nav-menu-box' class='nav-menu-hide'>
+    <div class='navmenu-logo-div'>
+        <img class='navmenu-logo' src='./images/logo.svg' alt='Loopstudios logo'/>
+        <img id='#closeBtn' class='close-btn' src='./images//icon-close.svg' alt='Close button' onclick="closeNav()"/>
+      </div>
+      <ul class="navmenu-links">
+        <li>About</li>
+        <li>Careers</li>
+        <li>Events</li>
+        <li>Products</li>
+        <li>Support</li>
+      </ul>
+    </div>
+    <div id='page'>
+      <header>
+          <nav class='navbar'>
+            <div class='logoDiv'>
+              <img class='logo' src='./images/logo.svg' alt='Loopstudios logo'/>
+            </div>
+            <ul class="navbar-links">
+              <li>About</li>
+              <li>Careers</li>
+              <li>Events</li>
+              <li>Products</li>
+              <li>Support</li>
+            </ul>
+            <div id='menu-icon' onclick="openNav()" class='menuDiv'>
+              <img class='menu' src='./images/icon-hamburger.svg' alt='menu icon'/>
+            </div>
+          </nav>
+          <div class='headlineDiv'>
+            IMMERSIVE EXPERIENCES THAT DELIVER
+          </div>
+      </header>
+      <section class="VR-section">
+        <img class="VR-image" src='./images//mobile/image-interactive.jpg' alt='man using VR device'/>
+        <div class='VR-content'>
+          <h3 class='VR-heading'>
+            THE LEADER IN INTERACTIVE VR
+          </h3>
+          <p class='VR-para'>
+            Founded in 2011, Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies around the globe.
+            Our award-winning creations have transformed businesses through digital
+            experiences that bind to their brand.
+          </p>
+        </div>
+      </section>
+      <section class='creations-section'>
+        <div class='creations-top'>
+          <div class="creations-heading">
+            OUR CREATIONS
+          </div>
+          <div class='seeall-desktop'>
+              SEE ALL
+          </div>
+        </div>
+        <ul class='image-list'>
+          <li class='list-item list-item-1'><p>DEEP EARTH</p></li>
+          <li class='list-item list-item-2'><p>NIGHT ARCADE</p></li>
+          <li class='list-item list-item-3'><p>SOCCER TEAM VR</p></li>
+          <li class='list-item list-item-4'><p>THE<br/> GRID</p></li>
+          <li class='list-item list-item-5'><p>FROM UP<br/> ABOVE VR</p></li>
+          <li class='list-item list-item-6'><p>POCEKT BOREALIS</p></li>
+          <li class='list-item list-item-7'><p>THE CURIOSITY</p></li>
+          <li class='list-item list-item-8'><p>MAKE IT FISHEYE</p></li>
+        </ul>
+        <div class="seeall-btn">
+            SEE ALL
+        </div>
+      </section>
+      <footer class='footer'>
+        <div class='logo-and-links'>
+          <div class='logo-footer'>
+            <img class='logo' src='./images/logo.svg' alt='Loopstudios logo'/>
+          </div>
+          <ul class='footer-links'>
+            <li>About</li>
+            <li>Careers</li>
+            <li>Events</li>
+            <li>Products</li>
+            <li>Support</li>
+          </ul>
+      </div>
+      <div class='icons-and-copyright'>
+        <div class="footer-icons">
+          <img class='icon' src='./images/icon-facebook.svg' alt='Facebook icon'/>
+          <img class='icon' src='./images/icon-twitter.svg' alt='Twitter icon'/>
+          <img class='icon' src='./images/icon-pinterest.svg' alt='Pinterest icon'/>
+          <img class='icon' src='./images/icon-instagram.svg' alt='Instagram icon'/>
+        </div>
+        <div class="copyright-div">
+          <p>© 2021 Loopstudios. All rights reserved.</p>
+        </div>
+      </div>
+      </footer>
+  </div>
+
+    <script>
+      function openNav(){
+        document.querySelector('#page').classList.add('hide');
+        document.getElementById('#nav-menu-box').classList.remove('nav-menu-hide');
+        document.getElementById('#nav-menu-box').classList.add('nav-menu');
+      }
+
+      function closeNav(){
+        document.getElementById('#nav-menu-box').classList.add('nav-menu-hide');
+        document.querySelector('#page').classList.remove('hide');
+      }
+    </script>
+  </body>
+</html>
